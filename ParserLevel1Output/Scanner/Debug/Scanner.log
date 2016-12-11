@@ -1,0 +1,20 @@
+﻿Build started 12/10/2016 5:44:22 PM.
+     1>Project "C:\Users\Dell\Desktop\Parser\ParserLevel1Output\Scanner\Scanner.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\users\dell\desktop\parser\parserlevel1output\scanner\scanner.h(49): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\dell\desktop\parser\parserlevel1output\scanner\scanner.h(68): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\dell\desktop\parser\parserlevel1output\scanner\scanner.h(88): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\dell\desktop\parser\parserlevel1output\scanner\scanner.h(179): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\dell\desktop\parser\parserlevel1output\scanner\scanner.h(192): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\dell\desktop\parser\parserlevel1output\scanner\scanner.h(204): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\dell\desktop\parser\parserlevel1output\scanner\treenode.h(71): warning C4154: deletion of an array expression; conversion to pointer supplied
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Dell\Desktop\Parser\ParserLevel1Output\Debug\Scanner.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Dell\Desktop\Parser\ParserLevel1Output\Debug\Scanner.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Dell\Desktop\Parser\ParserLevel1Output\Debug\Scanner.lib" /MACHINE:X86 Debug\main.obj
+         Scanner.vcxproj -> C:\Users\Dell\Desktop\Parser\ParserLevel1Output\Debug\Scanner.exe
+     1>Done Building Project "C:\Users\Dell\Desktop\Parser\ParserLevel1Output\Scanner\Scanner.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.91
