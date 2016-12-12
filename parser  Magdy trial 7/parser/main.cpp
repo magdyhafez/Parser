@@ -12,10 +12,10 @@ TreeNode* read_stmt();
 bool match(string expectedToken);
 TreeNode* exp();
 void simpleExp();
-void addop();
+TreeNode* addop();
 void comparisonop();
 TreeNode* term();
-void mulop();
+TreeNode* mulop();
 TreeNode* factor();
 vector<TreeNode*> Syntaxtree; 
 
@@ -39,7 +39,7 @@ int main()
 
 	scannerOutput(Queue);
 	//parser parse;
-	Syntaxtree.push_back(factor());
+	Syntaxtree.push_back(term());
 	cout <<endl;
 	//TreeNode* testTree = Syntaxtree[0];
 	//cout<<testTree->getTokenValue()<<"   "<<testTree->getTokenType()<<endl;
@@ -53,15 +53,18 @@ int main()
 	getchar();
 	return 0;
 }
-//TreeNode* exp()
-//{
-//	simpleExp();
-//	while(!(getTokenValue() == ";"))
-//	{
-//		comparisonop();
-//		simpleExp();
-//	}
-//}
+TreeNode* exp()
+{
+	TreeNode* temp = new TreeNode("mulop", getTokenValue());
+
+	return temp;
+	/*simpleExp();
+	while(!(getTokenValue() == ";"))
+	{
+		comparisonop();
+		simpleExp();
+	}*/
+}
 //void simpleExp()
 //{
 //	term();
@@ -72,16 +75,23 @@ int main()
 //	}
 //}
 //
-//TreeNode* term()
-//{
-//	TreeNode* t;
-//	t=factor();
-//	while(!(getTokenValue() == ";"))
-//	{
-//		mulop();
-//		factor();
-//	}
-//}
+TreeNode* term()
+{
+	TreeNode* t;
+	t=factor();
+	int i = 0;
+	TreeNode* t1;
+	while(!(getTokenValue() == ";"))
+	{
+		 t1=mulop();
+
+		t1->setChild(t, 0);
+		t1->setChild(factor(), 1);
+		t = t1;
+		
+	}
+	return t; 
+}
 //void comparisonop()
 //{
 //	if(match("<") || match("="))
@@ -90,22 +100,36 @@ int main()
 //		cout<<"comparison op missing"<<endl;
 //}
 //
-//void mulop()
-//{
-//	if(match("*") || match("/"))
-//		;
-//	else
-//		cout<<"mulop missing"<<endl;
-//}
-//
-//void addop()
-//{
-//	if(match("+") || match("-"))
-//		;
-//	else
-//		cout<<"addop missing"<<endl;
-//}
-//
+TreeNode* mulop()
+{
+	if (match("*") || match("/"))
+	{
+		TreeNode* temp = new TreeNode("mulop", getTokenValue());
+		advanceToken();
+		return temp;
+
+	}
+		
+	else
+	{
+			cout << "mulop missing" << endl;
+			return NULL;
+	}
+}
+
+/*TreeNode* addop()
+{
+	if (match("+") || match("-"))
+	{
+		TreeNode* temp = new TreeNode("mulop", getTokenValue());
+		advanceToken();
+		return temp;
+	}
+	else
+		cout<<"addop missing"<<endl;
+	return NULL;
+}*/
+
 TreeNode* factor()
 {
 	if(match("("))
