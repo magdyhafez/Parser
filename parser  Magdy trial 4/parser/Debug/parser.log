@@ -1,0 +1,10 @@
+﻿  main.cpp
+c:\users\hp\desktop\parser\parser  magdy trial 4\parser\scanner.h(54): warning C4018: '<': signed/unsigned mismatch
+c:\users\hp\desktop\parser\parser  magdy trial 4\parser\scanner.h(73): warning C4018: '<': signed/unsigned mismatch
+c:\users\hp\desktop\parser\parser  magdy trial 4\parser\scanner.h(93): warning C4018: '<': signed/unsigned mismatch
+c:\users\hp\desktop\parser\parser  magdy trial 4\parser\scanner.h(184): warning C4018: '<': signed/unsigned mismatch
+c:\users\hp\desktop\parser\parser  magdy trial 4\parser\scanner.h(197): warning C4018: '<': signed/unsigned mismatch
+c:\users\hp\desktop\parser\parser  magdy trial 4\parser\scanner.h(209): warning C4018: '<': signed/unsigned mismatch
+c:\users\hp\desktop\parser\parser  magdy trial 4\parser\treenode.h(78): warning C4154: deletion of an array expression; conversion to pointer supplied
+main.obj : error LNK2019: unresolved external symbol "class TreeNode * __cdecl exp(void)" (?exp@@YAPAVTreeNode@@XZ) referenced in function "class TreeNode * __cdecl factor(void)" (?factor@@YAPAVTreeNode@@XZ)
+C:\Users\hp\Desktop\Parser\parser  Magdy trial 4\Debug\parser.exe : fatal error LNK1120: 1 unresolved externals
