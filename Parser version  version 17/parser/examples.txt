@@ -1,0 +1,4 @@
+fact:= fact*3+30-1;
+fact:= 30-1;
+read id;
+write fact;

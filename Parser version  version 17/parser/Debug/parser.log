@@ -1,0 +1,10 @@
+﻿  main.cpp
+c:\users\hp\desktop\parser\parser version  version 17\parser\scanner.h(71): warning C4018: '<': signed/unsigned mismatch
+c:\users\hp\desktop\parser\parser version  version 17\parser\scanner.h(90): warning C4018: '<': signed/unsigned mismatch
+c:\users\hp\desktop\parser\parser version  version 17\parser\scanner.h(110): warning C4018: '<': signed/unsigned mismatch
+c:\users\hp\desktop\parser\parser version  version 17\parser\scanner.h(201): warning C4018: '<': signed/unsigned mismatch
+c:\users\hp\desktop\parser\parser version  version 17\parser\scanner.h(214): warning C4018: '<': signed/unsigned mismatch
+c:\users\hp\desktop\parser\parser version  version 17\parser\scanner.h(226): warning C4018: '<': signed/unsigned mismatch
+c:\users\hp\desktop\parser\parser version  version 17\parser\treenode.h(81): warning C4154: deletion of an array expression; conversion to pointer supplied
+  parser.vcxproj -> C:\Users\hp\Desktop\Parser\Parser version  version 17\Debug\parser.exe
+  parser.vcxproj -> C:\Users\hp\Desktop\Parser\Parser version  version 17\Debug\parser.pdb (Full PDB)
